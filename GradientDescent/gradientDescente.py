@@ -11,7 +11,6 @@ class LinearRegression :
         n_samples,n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0
-
         for _ in range(self.n_iters):
             y_pred = np.dot(X,self.weights) + self.bias
             #np.dot(a,b) product the sum prod of a end b sum(ai*bi)
