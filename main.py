@@ -7,8 +7,9 @@ from sklearn import model_selection,linear_model
 from matplotlib import style
 
 # reading dataset
-data = pd.read_csv('student-mat.csv', sep=';')
-data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
+data = pd.read_csv('notes.csv',encoding='latin1')
+print(data.head())
+"""data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 
 predict = "G3"
 
@@ -50,3 +51,4 @@ pyplot.scatter(data[p], data["G3"])
 pyplot.xlabel(p)
 pyplot.ylabel("Final Grade")
 pyplot.show()
+"""
